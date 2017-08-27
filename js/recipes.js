@@ -1,15 +1,4 @@
-var recipeHtml = 	`<div class='col-lg-4 col-sm-6'>
-										<div class='recipe'>
-											<p class='recipeName'>Name</p>
-							  			<ul class='ingredientsList'>
-							  				<li>
-							  					<span class='unit'>Unit</span>
-									  			<span class='ingredient'>Ingredient</span>
-							  				</li>
-							  			</ul>
-							  			<button>Edit</button>
-										</div>
-									</div>`;
+
 
 
 
