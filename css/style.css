@@ -1,0 +1,91 @@
+body {
+	padding-top: 70px;
+}
+
+input{
+	margin: 0;
+	padding: 0 5px;
+	outline: none;
+}
+
+
+.jumbotron {
+	color: #2c3e50;	
+	background: #ecf0f1;
+}
+
+.navbar-inverse {
+	background-color: #2c3e50
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.recipe {
+	border: 2px solid gray;
+	margin: 10px;
+}
+
+.recipeName {
+	margin: 0;
+	padding: 0 5px;
+	width: 100%;
+	font-size: 30px;
+	border: 1px solid white;
+}
+
+.ingredientsList {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+.unit {
+	margin: 0;
+	padding: 0 5px;
+	width: 20%;
+	border: none;
+}
+
+.ingredient {
+	margin: 0;
+	padding: 0 5px;
+	width: 65%;
+	border: none;
+}
+
+.plus, .delete {
+	width: 10%;
+	float: right;
+	text-align: center;
+}
+
+.fa-plus, .fa-trash-o {
+	padding: 5px 0px;	
+}
+
+
+.addButton, .editButton {
+	margin: 10px 0 0 0;
+	width: 100%;
+	border: 0;
+	font-size: 18px;
+}
+
+.ingredientsList li {
+	height: 28px;
+}
+
+/* Every other li */
+.ingredientsList li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+
