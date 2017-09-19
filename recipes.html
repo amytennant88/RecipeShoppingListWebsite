@@ -54,31 +54,27 @@
 			<div class="col-lg-4 col-sm-6">
 				<div class="recipe">
 	  			<input class="recipeName" type="text" placeholder="Name">
-	  			<ul class="ingredientsList">
-	  				<li>
-	  					<input class="unit" type="text" placeholder="Unit">
-			  			<input class="ingredient" type="text" placeholder="Ingredient">
-			  			<span class="plus"><i class="fa fa-plus"></i></span>
-	  				</li>
-	  			</ul>
-	  			<button class="addButton">Add Recipe</button>
-				</div>
-			</div>
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="unit"><input type="text" placeholder="Unit"></th>
+								<th class="ingredient"><input type="text" placeholder="Ingredient"></th>
+								<th class="add"><i class="fa fa-plus"></i></th>
+							</tr>
+						</thead>
 
-			<div class="col-lg-4 col-sm-6">
-				<div class="recipe">
-	  			<p class="recipeName">Name</p>
-	  			<ul class="ingredientsList">
-	  				<li>
-	  					<span class="unit">Unit</span>
-			  			<span class="ingredient">Ingredient</span>
-			  			<span class="delete"><i class="fa fa-trash-o"></i></span>
-	  				</li>
-	  			</ul>
-	  			<button class="editButton">Edit</button>
-				</div>
-			</div>
+						<tbody>
+							<tr>
+								<td>2cup</td>
+								<td>Sugar</td>
+								<td class='delete'><i class='fa fa-trash-o'></i></td>
+							</tr>
 
+						</tbody>
+					</table>
+<!-- 	  			<button class="addRecipe">Add Recipe</button> -->
+				</div>
+			</div>			
 
 		</div>
 	</div>
