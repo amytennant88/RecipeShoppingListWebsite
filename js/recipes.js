@@ -14,7 +14,7 @@ function initalise()
 
 	//Stop input click triggering td click
 	$("tbody").on("click", "input", function(event){
-		event.stopPropagation();
+		event.stopImmediatePropagation();
 	});
 
 	//Save ingredient changes to table
@@ -79,18 +79,21 @@ function addIngredient()
 
 
 //Delete ingredient
-function deleteIngredient()
+function deleteIngredient(event)
 {
 	$(this).closest("tr").fadeOut(500, function(){
 		$(this).remove(); //remove tr
 	});
-	event.stopPropagation(); //stop the parent listeners firing
+	//alert("delete");
+
+	event.stopImmediatePropagation(); //stop the parent listeners firing
 }
 
 
 //Change table entry to input when clicked
 function tableEntryToInput(event)
 {
+	//alert("tableentryToInput");
 	var tableText = $(this).html();
 	var inputHtml = "<input type='text' value='" + tableText + "'>"
 	$(this).html(inputHtml);
@@ -99,7 +102,7 @@ function tableEntryToInput(event)
 	//Focus on input after clicked
 	$(this).children().focus();
 
-	event.stopPropagation();
+	event.stopImmediatePropagation()
 }
 
 
